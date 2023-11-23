@@ -17,7 +17,6 @@ st.set_page_config(layout="wide", page_title="Data Science Toolbox", page_icon =
 st.title('Spotify')
 
 artist = pd.read_csv("/Users/nichdylan/Downloads/artists.csv")
-tracks = pd.read_csv("/Users/nichdylan/Downloads/tracks.csv")
 
 def load_data():
         df3 = pd.read_csv("df3.csv")
