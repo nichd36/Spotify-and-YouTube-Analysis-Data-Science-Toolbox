@@ -23,8 +23,8 @@ st.title('Data Science Toolbox')
 artist = pd.read_csv("artists.csv")
 youtube = pd.read_csv("Spotify_Youtube.csv")
 
-tracks1 = pd.read_csv("split_tracks_1.csv")
-tracks2 = pd.read_csv("split_tracks_2.csv")
+tracks1 = "split_tracks_1.csv"
+tracks2 = "split_tracks_2.csv"
 
 import csv
 
