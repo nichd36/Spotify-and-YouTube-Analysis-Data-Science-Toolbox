@@ -44,6 +44,8 @@ with open(tracks1, 'r') as infile1, open(tracks2, 'r') as infile2, open(output_f
     for row in reader2:
         writer.writerow(row)
 
+tracks = pd.read_csv("tracks.csv")
+
 def load_data():
         df3 = pd.read_csv("df3.csv")
         df3 = df3[df3['release_date'] != 1900]
