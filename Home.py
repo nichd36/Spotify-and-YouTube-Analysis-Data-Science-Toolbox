@@ -9,6 +9,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 plt.switch_backend('Agg')
 import seaborn as sns
+import csv
 
 image_path = "/Users/nichdylan/Documents/Natural Language Processing/NLP fake news/DSC_0424-Edited.jpg"
 st.set_page_config(layout="wide", page_title="Data Science Toolbox", page_icon = image_path)
@@ -20,8 +21,28 @@ model_energy = load_model('model_energy.h5')
 st.title('Data Science Toolbox')
 
 artist = pd.read_csv("artists.csv")
-tracks = pd.read_csv("tracks.csv")
 youtube = pd.read_csv("Spotify_Youtube.csv")
+
+tracks1 = pd.read_csv("split_tracks_1.csv")
+tracks2 = pd.read_csv("split_tracks_2.csv")
+
+import csv
+
+output_file = 'tracks.csv'
+
+with open(tracks1, 'r') as infile1, open(tracks2, 'r') as infile2, open(output_file, 'w', newline='') as outfile:
+    reader1 = csv.reader(infile1)
+    reader2 = csv.reader(infile2)
+    writer = csv.writer(outfile)
+
+    header = next(reader1)
+    writer.writerow(header)
+
+    for row in reader1:
+        writer.writerow(row)
+
+    for row in reader2:
+        writer.writerow(row)
 
 def load_data():
         df3 = pd.read_csv("df3.csv")
