@@ -16,7 +16,7 @@ import plotly.express as px
 plt.switch_backend('Agg')
 import seaborn as sns
 
-image_path = "/Users/nichdylan/Documents/Natural Language Processing/NLP fake news/DSC_0424-Edited.jpg"
+image_path = "DSC_0424-Edited.jpg"
 st.set_page_config(layout="wide", page_title="Data Science Toolbox", page_icon = image_path)
 
 st.title('Song clusters vs Popularity')
