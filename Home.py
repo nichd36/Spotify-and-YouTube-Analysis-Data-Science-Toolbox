@@ -11,7 +11,7 @@ plt.switch_backend('Agg')
 import seaborn as sns
 import csv
 
-image_path = "/Users/nichdylan/Documents/Natural Language Processing/NLP fake news/DSC_0424-Edited.jpg"
+image_path = "DSC_0424-Edited.jpg"
 st.set_page_config(layout="wide", page_title="Data Science Toolbox", page_icon = image_path)
 
 model_danceability = load_model('model_danceability.h5')
@@ -44,7 +44,7 @@ with open(tracks1, 'r') as infile1, open(tracks2, 'r') as infile2, open(output_f
     for row in reader2:
         writer.writerow(row)
 
-tracks = pd.read_csv("tracks.csv")
+tracks = pd.read_csv("split_tracks_1.csv")
 
 def load_data():
         df3 = pd.read_csv("df3.csv")
