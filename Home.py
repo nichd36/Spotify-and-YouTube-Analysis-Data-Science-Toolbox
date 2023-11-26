@@ -64,7 +64,7 @@ def main():
         st.header("Spotify's tracks dataset 🎵🪗")
         st.markdown('to download our tracks dataset, visit: www.google.com')
         st.dataframe(tracks)
-        panjang = tracks.shape[0]
+        panjang = 586672
         st.write('This dataframe consists of', panjang, 'rows.')
 
         st.header('A glimpse of our final data 📊')
