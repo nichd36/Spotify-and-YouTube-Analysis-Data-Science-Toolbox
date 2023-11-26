@@ -55,20 +55,21 @@ def main():
         df3 = load_data()
 
         st.markdown("Our spotify dataset was made from a combination of 2 dataset, one for artist, and the other one for tracks.")
+    
         st.header("Spotify's artists dataset 👩‍🎤👨🏻‍🎤🧑🏾‍🎤🎤")
-        st.markdown('to download our artist dataset, visit: www.google.com')
+        st.markdown('to download our artist dataset, visit: https://drive.google.com/file/d/1FkFFIjd5FJ40_1PbtbDxcOMaoAcwA9xx/view?usp=sharing')
         st.dataframe(artist)
         panjang = artist.shape[0]
         st.write('This dataframe consists of', panjang, 'rows.')
 
         st.header("Spotify's tracks dataset 🎵🪗")
-        st.markdown('to download our tracks dataset, visit: www.google.com')
+        st.markdown('to download our tracks dataset, visit: https://drive.google.com/file/d/1HNwh2HicXyQd-AmIdARN_TfMXcTJfSO8/view?usp=sharing')
         st.dataframe(tracks)
         panjang = 586672
         st.write('This dataframe consists of', panjang, 'rows.')
 
         st.header('A glimpse of our final data 📊')
-        st.markdown('to download our dataset, visit: www.google.com')
+        st.markdown('to download our dataset, visit: https://drive.google.com/file/d/109ImsiJK3YBqPGJDnE8t3n-yWovpqRsV/view?usp=sharing')
         st.dataframe(df3)
         panjang = df3.shape[0]
         st.write('This dataframe consists of', panjang, 'rows.')
