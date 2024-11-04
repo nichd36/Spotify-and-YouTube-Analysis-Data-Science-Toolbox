@@ -13,9 +13,9 @@ from tensorflow.keras.models import load_model
 
 padding = 20
 
-image_path_nicholas = "DSC_0424-Edited.jpg"
-image_path_fk = "PHOTO-2023-11-23-13-00-43.jpg"
-image_path_josh = "PHOTO-2023-11-23-14-59-50.jpg"
+image_path_nicholas = "Nicholas-photo.jpg"
+image_path_fk = "FK-photo.jpg"
+image_path_josh = "Joshua-photo.jpg"
 
 st.markdown(
     """
